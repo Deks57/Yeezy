@@ -1,0 +1,68 @@
+@use "../helpers" as *;
+
+.feedback {
+  background-color: var(--grey-defualt);
+  padding: rem(15) 0 rem(20);
+
+  @include tablet {
+    padding: rem(30) 0 rem(15);
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__info {
+    max-width: rem(326);
+    width: 100%;
+  }
+
+  &__center img {
+    // position: absolute;
+    top: -61%;
+    right: 42%;
+    width: fluid(338, 142);
+    height: fluid(225, 135);
+    object-fit: cover;
+  }
+
+  &__form {
+    display: flex;
+    column-gap: rem(30);
+
+    & input {
+      border-bottom: 1px solid var(--black);
+      width: 284px;
+
+      &::placeholder {
+        color: var(--black);
+      }
+
+      @include mobile {
+        padding: rem(15);
+        border: 1px solid var(--black);
+        opacity: 0.4;
+        border-radius: 5px;
+      }
+    }
+
+    @include tablet {
+      flex-direction: column;
+      row-gap: rem(15);
+      padding: rem(25) 0 0;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@use "../helpers" as *;
+
+.exclusive {
+  background-color: var(--black);
+  padding: rem(70) 0 rem(80);
+  margin: rem(70) 0;
+
+  @include tablet {
+    padding: rem(20) 0 rem(40);
+    margin: rem(40) 0;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    column-gap: rem(75);
+    margin-bottom: rem(30);
+    color: var(--white);
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: rem(5);
+      margin-bottom: rem(20);
+    }
+  }
+
+  &__title span {
+    @include fluid-text(24, 17);
+    text-align: center;
+    color: var(--gray-bg);
+  }
+
+  &__card {
+    background-color: var(--white);
+    padding: rem(32) rem(25) rem(40);
+    text-align: center;
+
+    @include tablet {
+      padding: rem(20) rem(10);
+    }
+
+    & img {
+      width: fluid(237, 129);
+      height: fluid(157, 97);
+      object-fit: cover;
+    }
+
+    &-info {
+      padding: rem(24) 0;
+    }
+  }
+}
+
+.next-orange {
+  position: absolute;
+  z-index: 10;
+  top: 20%;
+  right: 0%;
+}

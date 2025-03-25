@@ -1,0 +1,155 @@
+@use "../helpers" as *;
+
+.catalog__info {
+  margin: rem(45) 0 rem(90);
+
+  @include mobile {
+    margin: rem(35) 0 rem(45);
+  }
+}
+
+.catalog h1 {
+  text-align: center;
+  padding: rem(40) 0;
+
+  @include mobile {
+    padding: 0 0 rem(12) 0;
+  }
+}
+
+.catalog__info div {
+  line-height: 150%;
+}
+
+.catalog {
+  &__filters.active .catalog__dropdowns {
+    display: flex;
+  }
+
+  &__filter {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    column-gap: rem(5);
+    display: none;
+
+    @include mobile {
+      display: flex;
+    }
+  }
+
+  &__dropdowns {
+    display: flex;
+    align-items: center;
+    column-gap: rem(30);
+
+    @include mobile {
+      display: none;
+      flex-direction: column;
+      align-items: start;
+      width: 279px;
+
+      &:last-child {
+        border-bottom: 1px solid #ccc;
+      }
+    }
+  }
+
+  &__select {
+    position: relative;
+
+    @include mobile {
+      border-top: 1px solid #ccc;
+      width: 100%;
+      padding-block: rem(12);
+    }
+  }
+
+  &__nav .select-trigger {
+    display: flex;
+    align-items: center;
+    column-gap: rem(5);
+  }
+
+  &__list {
+    border-radius: 5px;
+    padding: 16px;
+    width: rem(213);
+    box-shadow: 2px 4px 15px 0 rgba(0, 0, 0, 0.15);
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: rem(5);
+    // height: fit-content;
+
+    transition: all 0.4s ease 0s;
+    // opacity: 0;
+    display: none;
+    pointer-events: none;
+    // position: absolute;
+    // top: 100%;
+    // left: 0;
+    // z-index: 100;
+
+    @include mobile {
+      box-shadow: none;
+      background: none;
+      padding: 0;
+      padding-top: rem(12);
+    }
+  }
+
+  &__nav.active .catalog__list {
+    // opacity: 1;
+    display: flex;
+    pointer-events: all;
+  }
+
+  &__nav.active span {
+    transform: rotate(180deg);
+  }
+}
+
+.custom-checkbox input[type="checkbox"] {
+  border: 1px solid #ccc;
+  width: 14px;
+  height: 14px;
+  margin-right: rem(10);
+}
+
+.expandable-content {
+  @include mobile {
+    --maxHeight: #{rem(300)};
+
+    position: relative;
+    overflow-y: hidden;
+
+    &.expanded {
+      &::before,
+      .expandable-content__button {
+        @include hide;
+      }
+    }
+
+    &:not(.expanded) {
+      max-height: var(--maxHeight);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 30%;
+      background: linear-gradient(
+        180deg,
+        rgba(20, 20, 20, 0) 0%,
+        #dfdfdf 77.38%
+      );
+      pointer-events: none;
+      transition-duration: var(--transition-duration);
+    }
+  }
+}

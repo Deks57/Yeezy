@@ -1,0 +1,83 @@
+@use "../helpers" as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--grey);
+  color: var(--black);
+  font-family: var(--font-main);
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  text-transform: uppercase;
+}
+
+h1,
+.h1 h2,
+.h2 h3,
+.h3 {
+  font-weight: 500;
+}
+
+h4,
+.h4 h5,
+.h5 h6,
+.h6 {
+  font-weight: 400;
+}
+
+h1,
+.h1 {
+  @include fluid-text(40, 22);
+}
+
+h2,
+.h2 {
+  @include fluid-text(24, 20);
+}
+
+h3,
+.h3 {
+  @include fluid-text(20, 20);
+}
+
+h4,
+.h4 {
+  @include fluid-text(18, 16);
+}
+
+h5,
+.h5 {
+  @include fluid-text(16, 16);
+}
+
+// h6,
+// .h6 {
+// }
+
+p,
+.p {
+  @include fluid-text(15, 14);
+  text-transform: uppercase;
+}
+
+.opacity {
+  opacity: 0.7;
+}
+
+.is-lock {
+  overflow: hidden;
+}

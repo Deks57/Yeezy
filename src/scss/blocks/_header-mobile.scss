@@ -1,0 +1,63 @@
+@use "helpers" as *;
+
+.header-mobile {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 320px;
+  background: var(--black);
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(25);
+  text-align: center;
+  color: var(--white);
+  padding: rem(50) rem(20);
+  display: none;
+  z-index: 5;
+
+  &.active {
+    display: flex;
+    overflow-y: auto;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: grid;
+    row-gap: rem(30);
+    text-align: center;
+  }
+
+  &__link {
+    color: var(--white);
+    text-transform: uppercase;
+
+    &-icon {
+      display: flex;
+      justify-content: center;
+      column-gap: rem(18);
+    }
+  }
+}
+
+.mobile__feedback-link {
+  border: 1px solid #fcfcfc;
+  width: rem(50);
+  height: rem(50);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: rem(5);
+  opacity: 0.6;
+}
+
+@include tablet {
+  .buttom-mobile {
+    color: var(--white);
+    border: 1px solid var(--white);
+  }
+}

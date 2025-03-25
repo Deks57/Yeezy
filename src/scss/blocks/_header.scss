@@ -1,0 +1,103 @@
+@use "../helpers" as *;
+
+.header {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(34) 0 rem(48);
+
+    @include tablet {
+      padding: rem(12) 0;
+    }
+
+    &-info {
+      display: flex;
+      align-items: center;
+      column-gap: rem(30);
+    }
+  }
+
+  &__link {
+    width: fluid(75, 44);
+    height: fluid(50, 44);
+    border-radius: rem(5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__feedback {
+    display: flex;
+    column-gap: rem(30);
+    align-items: center;
+    margin-right: rem(34);
+  }
+
+  &__button {
+    display: flex;
+    column-gap: rem(30);
+  }
+
+  &__icon {
+    display: flex;
+    column-gap: fluid(16, 10);
+  }
+
+  &__bottom {
+    margin: rem(48) 0;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: rem(20);
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    color: var(--black);
+    text-transform: uppercase;
+  }
+}
+
+.num {
+  font-weight: 400;
+  color: var(--black);
+
+  @include mobile {
+    color: var(--white);
+  }
+}
+
+.telegramm {
+  width: fluid(50, 44);
+  height: fluid(50, 44);
+  background: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@include tablet {
+  .num,
+  .button-visible {
+    display: none;
+  }
+}
+
+@include tablet {
+  .header__top-info {
+    gap: 0;
+  }
+
+  .header__feedback {
+    margin-right: 10px;
+  }
+}

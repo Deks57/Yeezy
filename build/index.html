@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Стартовый шаблон</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header" data-js-header>
+  <div class="container">
+    <div class="header__top">
+      <div class="header__logo">
+        <a href="index.html" class="logo"
+          ><img src="./../../img/logo/logo.svg" alt=""
+        /></a>
+      </div>
+      <div class="header__top-info">
+        <div class="header__feedback">
+          <a href="#" class="num h2">8 (800) 600-54-80</a>
+          <a href="#" class="telegramm"
+            ><img src="./../../img/icon/telegramm.svg" alt=""
+          /></a>
+        </div>
+        <div class="header__button">
+          <a href="#" class="button button-grey button-visible"
+            >Заказать звонок</a
+          >
+          <a href="#" class="button button-white button-visible"
+            >Получить скидку</a
+          >
+        </div>
+        <div class="header__icon">
+          <a href="#" class="button-search header__link"
+            ><img src="./../../img/icon/search.svg" alt=""
+          /></a>
+          <a href="#" class="button-basket header__link"
+            ><img src="./../../img/icon/basket.svg" alt=""
+          /></a>
+        </div>
+      </div>
+      <button
+        class="header__burger burger-button visible-mobile"
+        data-js-header-burger-button
+      >
+        <span class="burger-button__line"></span>
+        <span class="burger-button__line"></span>
+        <span class="burger-button__line"></span>
+      </button>
+    </div>
+
+    <div class="header-mobile" data-js-header-overlay>
+  <nav class="header-mobile__nav">
+    <ul class="header-mobile__list">
+      <li class="header-mobile__item">
+        <a href="" class="header-mobile__link">350</a>
+      </li>
+      <li class="header-mobile__item">
+        <a href="" class="header-mobile__link">350 V2</a>
+      </li>
+      <li class="header-mobile__item">
+        <a href="" class="header-mobile__link">380</a>
+      </li>
+      <li class="header-mobile__item">
+        <a href="" class="header-mobile__link">450</a>
+      </li>
+      <li class="header-mobile__item">
+        <a href="" class="header-mobile__link">500</a>
+      </li>
+      <li class="header-mobile__item">
+        <a href="" class="header-mobile__link">700</a>
+      </li>
+      <li class="header-mobile__item">
+        <a href="" class="header-mobile__link">FAQ</a>
+      </li>
+    </ul>
+    <ul class="header-mobile__list">
+      <li class="header-mobile__item">
+        <a href="" class="header-mobile__link">QNTM</a>
+      </li>
+      <li class="header-mobile__item">
+        <a href="" class="header-mobile__link">FOAM</a>
+      </li>
+      <li class="header-mobile__item">
+        <a href="" class="header-mobile__link">RNNR</a>
+      </li>
+      <li class="header-mobile__item">
+        <a href="" class="header-mobile__link">KIDS</a>
+      </li>
+      <li class="header-mobile__item">
+        <a href="" class="header-mobile__link">SLIDE</a>
+      </li>
+      <li class="header-mobile__item">
+        <a href="" class="header-mobile__link">Весь каталог</a>
+      </li>
+      <li class="header-mobile__item">
+        <a href="" class="header-mobile__link">Контакты</a>
+      </li>
+    </ul>
+  </nav>
+  <a href="#" class="num h2">8 (800) 600-54-80</a>
+  <a href="#" class="button button-grey buttom-mobile">Заказать звонок</a>
+  <a href="#" class="button button-white">Получить скидку</a>
+
+  <div class="header-mobile__link-icon">
+    <a href="#" class="mobile__feedback-link"
+      ><img src="./../../img/icon/telegramm.svg" alt=""
+    /></a>
+    <a href="#" class="mobile__feedback-link"
+      ><img src="./../../img/icon/telegramm.svg" alt=""
+    /></a>
+    <a href="#" class="mobile__feedback-link"
+      ><img src="./../../img/icon/telegramm.svg" alt=""
+    /></a>
+  </div>
+</div>
+
+
+    <div class="header__center">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="catalog-list.html" class="menu__link">YEEZY 350 v2</a>
+          </li>
+          <li class="menu__item">
+            <a href="maps.html" class="menu__link">YEEZY 350 v2</a>
+          </li>
+          <li class="menu__item">
+            <a href="acordions.html" class="menu__link">YEEZY 450</a>
+          </li>
+          <li class="menu__item">
+            <a href="404.html" class="menu__link">YEEZY 500</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">YEEZY 700</a>
+          </li>
+          <li class="menu__item"><a href="#" class="menu__link">Slide</a></li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">FOAM RNNR</a>
+          </li>
+          <li class="menu__item"><a href="#" class="menu__link">KIDS</a></li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Доставка</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="sliders">
+  <div class="container">
+    <div class="header__bottom">
+      <div class="swiper" id="swiper1">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><div class="box"></div></div>
+          <div class="swiper-slide"><div class="box"></div></div>
+          <div class="swiper-slide"><div class="box"></div></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <button class="slider__button prev">
+          <img src="./../../img/icon/arrow.svg" alt="" />
+        </button>
+        <button class="slider__button next">
+          <img src="./../../img/icon/arrow.svg" alt="" />
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="swiper" id="swiper2">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="./../../img/sneakers-1.png" alt="" />
+          <div class="card__info h3">Yeezy<span>450</span></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="./../../img/sneakers-1.png" alt="" />
+          <div class="card__info h3">Yeezy<span>450</span></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="./../../img/sneakers-1.png" alt="" />
+          <div class="card__info h3">Yeezy<span>450</span></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="./../../img/sneakers-1.png" alt="" />
+          <div class="card__info h3">Yeezy<span>450</span></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="./../../img/sneakers-1.png" alt="" />
+          <div class="card__info h3">Yeezy<span>450</span></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="./../../img/sneakers-1.png" alt="" />
+          <div class="card__info h3">Yeezy<span>450</span></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="./../../img/sneakers-1.png" alt="" />
+          <div class="card__info h3">Yeezy<span>450</span></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="./../../img/sneakers-1.png" alt="" />
+          <div class="card__info h3">Yeezy<span>450</span></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="./../../img/sneakers-1.png" alt="" />
+          <div class="card__info h3">Yeezy<span>450</span></div>
+        </div>
+      </div>
+    </div>
+    <button class="slider__button prev-white">
+      <img src="./../../img/icon/arrow.svg" alt="" />
+    </button>
+    <button class="slider__button next-white">
+      <img src="./../../img/icon/arrow.svg" alt="" />
+    </button>
+  </div>
+</section>
+ <section class="assortment">
+  <div class="container">
+    <h1 class="assortment__title">TOP SALES</h1>
+    <div class="assortment__cards">
+      <div class="assortment__card">
+        <label>
+          <input type="checkbox" />
+          <svg
+            class="assortment__img"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M5.47609 4.81765C3.77852 5.54698 2.53488 7.28171 2.53488 9.35032C2.53488 11.4637 3.45501 13.0927 4.77406 14.4887C5.86121 15.6393 7.17723 16.5929 8.46069 17.5229C8.76552 17.7438 9.06853 17.9633 9.36619 18.1839C9.90445 18.5827 10.3846 18.9327 10.8474 19.1869C11.3105 19.4412 11.6832 19.5574 12 19.5574C12.3168 19.5574 12.6895 19.4412 13.1526 19.1869C13.6154 18.9327 14.0955 18.5827 14.6338 18.1839C14.9315 17.9633 15.2345 17.7438 15.5393 17.5229C16.8228 16.5929 18.1388 15.6393 19.2259 14.4887C20.545 13.0927 21.4651 11.4637 21.4651 9.35032C21.4651 7.28171 20.2215 5.54698 18.5239 4.81765C16.8747 4.10911 14.6588 4.29675 12.5529 6.35314C12.4083 6.49441 12.2086 6.57424 12 6.57424C11.7914 6.57424 11.5917 6.49441 11.4471 6.35314C9.34124 4.29675 7.12528 4.10911 5.47609 4.81765ZM12 4.85095C9.63418 2.86148 6.98498 2.58318 4.83799 3.50559C2.5704 4.47981 1 6.74197 1 9.35032C1 11.9139 2.13632 13.8696 3.62641 15.4466C4.81968 16.7095 6.28023 17.7665 7.57015 18.7C7.86255 18.9116 8.14619 19.1169 8.41596 19.3168C8.94011 19.7052 9.50279 20.1193 10.073 20.4325C10.643 20.7455 11.2935 21 12 21C12.7065 21 13.357 20.7455 13.927 20.4325C14.4972 20.1193 15.0599 19.7052 15.584 19.3168C15.8538 19.1169 16.1374 18.9116 16.4299 18.7C17.7198 17.7665 19.1803 16.7095 20.3736 15.4466C21.8637 13.8696 23 11.9139 23 9.35032C23 6.74197 21.4296 4.47981 19.162 3.50559C17.015 2.58318 14.3658 2.86148 12 4.85095Z"
+              fill="#1B1919"
+            />
+          </svg>
+        </label>
+        <img src="./../../img/sneakers-1.png" alt="" />
+        <h2 class="assortment__card-name h4">
+          YEEZY BOOST 350 V2 TRIPLE WHITE
+        </h2>
+        <div class="assortment__card-info">
+          <p>Release date: 27.12.2018</p>
+          <p>55162 pairs</p>
+        </div>
+        <div class="assortment__card-price">
+          <p class="h3">33 990 ₽</p>
+          <button class="button button-orange">КупиТь</button>
+        </div>
+      </div>
+      <div class="assortment__card">
+        <label>
+          <input type="checkbox" />
+          <svg
+            class="assortment__img"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M5.47609 4.81765C3.77852 5.54698 2.53488 7.28171 2.53488 9.35032C2.53488 11.4637 3.45501 13.0927 4.77406 14.4887C5.86121 15.6393 7.17723 16.5929 8.46069 17.5229C8.76552 17.7438 9.06853 17.9633 9.36619 18.1839C9.90445 18.5827 10.3846 18.9327 10.8474 19.1869C11.3105 19.4412 11.6832 19.5574 12 19.5574C12.3168 19.5574 12.6895 19.4412 13.1526 19.1869C13.6154 18.9327 14.0955 18.5827 14.6338 18.1839C14.9315 17.9633 15.2345 17.7438 15.5393 17.5229C16.8228 16.5929 18.1388 15.6393 19.2259 14.4887C20.545 13.0927 21.4651 11.4637 21.4651 9.35032C21.4651 7.28171 20.2215 5.54698 18.5239 4.81765C16.8747 4.10911 14.6588 4.29675 12.5529 6.35314C12.4083 6.49441 12.2086 6.57424 12 6.57424C11.7914 6.57424 11.5917 6.49441 11.4471 6.35314C9.34124 4.29675 7.12528 4.10911 5.47609 4.81765ZM12 4.85095C9.63418 2.86148 6.98498 2.58318 4.83799 3.50559C2.5704 4.47981 1 6.74197 1 9.35032C1 11.9139 2.13632 13.8696 3.62641 15.4466C4.81968 16.7095 6.28023 17.7665 7.57015 18.7C7.86255 18.9116 8.14619 19.1169 8.41596 19.3168C8.94011 19.7052 9.50279 20.1193 10.073 20.4325C10.643 20.7455 11.2935 21 12 21C12.7065 21 13.357 20.7455 13.927 20.4325C14.4972 20.1193 15.0599 19.7052 15.584 19.3168C15.8538 19.1169 16.1374 18.9116 16.4299 18.7C17.7198 17.7665 19.1803 16.7095 20.3736 15.4466C21.8637 13.8696 23 11.9139 23 9.35032C23 6.74197 21.4296 4.47981 19.162 3.50559C17.015 2.58318 14.3658 2.86148 12 4.85095Z"
+              fill="#1B1919"
+            />
+          </svg>
+        </label>
+        <img src="./../../img/sneakers-1.png" alt="" />
+        <h2 class="assortment__card-name h4">
+          YEEZY BOOST 350 V2 TRIPLE WHITE
+        </h2>
+        <div class="assortment__card-info">
+          <p>Release date: 27.12.2018</p>
+          <p>55162 pairs</p>
+        </div>
+        <div class="assortment__card-price">
+          <p class="h3">33 990 ₽</p>
+          <button class="button button-orange">КупиТь</button>
+        </div>
+      </div>
+      <div class="assortment__card">
+        <label>
+          <input type="checkbox" />
+          <svg
+            class="assortment__img"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M5.47609 4.81765C3.77852 5.54698 2.53488 7.28171 2.53488 9.35032C2.53488 11.4637 3.45501 13.0927 4.77406 14.4887C5.86121 15.6393 7.17723 16.5929 8.46069 17.5229C8.76552 17.7438 9.06853 17.9633 9.36619 18.1839C9.90445 18.5827 10.3846 18.9327 10.8474 19.1869C11.3105 19.4412 11.6832 19.5574 12 19.5574C12.3168 19.5574 12.6895 19.4412 13.1526 19.1869C13.6154 18.9327 14.0955 18.5827 14.6338 18.1839C14.9315 17.9633 15.2345 17.7438 15.5393 17.5229C16.8228 16.5929 18.1388 15.6393 19.2259 14.4887C20.545 13.0927 21.4651 11.4637 21.4651 9.35032C21.4651 7.28171 20.2215 5.54698 18.5239 4.81765C16.8747 4.10911 14.6588 4.29675 12.5529 6.35314C12.4083 6.49441 12.2086 6.57424 12 6.57424C11.7914 6.57424 11.5917 6.49441 11.4471 6.35314C9.34124 4.29675 7.12528 4.10911 5.47609 4.81765ZM12 4.85095C9.63418 2.86148 6.98498 2.58318 4.83799 3.50559C2.5704 4.47981 1 6.74197 1 9.35032C1 11.9139 2.13632 13.8696 3.62641 15.4466C4.81968 16.7095 6.28023 17.7665 7.57015 18.7C7.86255 18.9116 8.14619 19.1169 8.41596 19.3168C8.94011 19.7052 9.50279 20.1193 10.073 20.4325C10.643 20.7455 11.2935 21 12 21C12.7065 21 13.357 20.7455 13.927 20.4325C14.4972 20.1193 15.0599 19.7052 15.584 19.3168C15.8538 19.1169 16.1374 18.9116 16.4299 18.7C17.7198 17.7665 19.1803 16.7095 20.3736 15.4466C21.8637 13.8696 23 11.9139 23 9.35032C23 6.74197 21.4296 4.47981 19.162 3.50559C17.015 2.58318 14.3658 2.86148 12 4.85095Z"
+              fill="#1B1919"
+            />
+          </svg>
+        </label>
+        <img src="./../../img/sneakers-1.png" alt="" />
+        <h2 class="assortment__card-name h4">
+          YEEZY BOOST 350 V2 TRIPLE WHITE
+        </h2>
+        <div class="assortment__card-info">
+          <p>Release date: 27.12.2018</p>
+          <p>55162 pairs</p>
+        </div>
+        <div class="assortment__card-price">
+          <p class="h3">33 990 ₽</p>
+          <button class="button button-orange">КупиТь</button>
+        </div>
+      </div>
+      <div class="assortment__card">
+        <label>
+          <input type="checkbox" />
+          <svg
+            class="assortment__img"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M5.47609 4.81765C3.77852 5.54698 2.53488 7.28171 2.53488 9.35032C2.53488 11.4637 3.45501 13.0927 4.77406 14.4887C5.86121 15.6393 7.17723 16.5929 8.46069 17.5229C8.76552 17.7438 9.06853 17.9633 9.36619 18.1839C9.90445 18.5827 10.3846 18.9327 10.8474 19.1869C11.3105 19.4412 11.6832 19.5574 12 19.5574C12.3168 19.5574 12.6895 19.4412 13.1526 19.1869C13.6154 18.9327 14.0955 18.5827 14.6338 18.1839C14.9315 17.9633 15.2345 17.7438 15.5393 17.5229C16.8228 16.5929 18.1388 15.6393 19.2259 14.4887C20.545 13.0927 21.4651 11.4637 21.4651 9.35032C21.4651 7.28171 20.2215 5.54698 18.5239 4.81765C16.8747 4.10911 14.6588 4.29675 12.5529 6.35314C12.4083 6.49441 12.2086 6.57424 12 6.57424C11.7914 6.57424 11.5917 6.49441 11.4471 6.35314C9.34124 4.29675 7.12528 4.10911 5.47609 4.81765ZM12 4.85095C9.63418 2.86148 6.98498 2.58318 4.83799 3.50559C2.5704 4.47981 1 6.74197 1 9.35032C1 11.9139 2.13632 13.8696 3.62641 15.4466C4.81968 16.7095 6.28023 17.7665 7.57015 18.7C7.86255 18.9116 8.14619 19.1169 8.41596 19.3168C8.94011 19.7052 9.50279 20.1193 10.073 20.4325C10.643 20.7455 11.2935 21 12 21C12.7065 21 13.357 20.7455 13.927 20.4325C14.4972 20.1193 15.0599 19.7052 15.584 19.3168C15.8538 19.1169 16.1374 18.9116 16.4299 18.7C17.7198 17.7665 19.1803 16.7095 20.3736 15.4466C21.8637 13.8696 23 11.9139 23 9.35032C23 6.74197 21.4296 4.47981 19.162 3.50559C17.015 2.58318 14.3658 2.86148 12 4.85095Z"
+              fill="#1B1919"
+            />
+          </svg>
+        </label>
+        <img src="./../../img/sneakers-1.png" alt="" />
+        <h2 class="assortment__card-name h4">
+          YEEZY BOOST 350 V2 TRIPLE WHITE
+        </h2>
+        <div class="assortment__card-info">
+          <p>Release date: 27.12.2018</p>
+          <p>55162 pairs</p>
+        </div>
+        <div class="assortment__card-price">
+          <p class="h3">33 990 ₽</p>
+          <button class="button button-orange">КупиТь</button>
+        </div>
+      </div>
+      <div class="assortment__card">
+        <label>
+          <input type="checkbox" />
+          <svg
+            class="assortment__img"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M5.47609 4.81765C3.77852 5.54698 2.53488 7.28171 2.53488 9.35032C2.53488 11.4637 3.45501 13.0927 4.77406 14.4887C5.86121 15.6393 7.17723 16.5929 8.46069 17.5229C8.76552 17.7438 9.06853 17.9633 9.36619 18.1839C9.90445 18.5827 10.3846 18.9327 10.8474 19.1869C11.3105 19.4412 11.6832 19.5574 12 19.5574C12.3168 19.5574 12.6895 19.4412 13.1526 19.1869C13.6154 18.9327 14.0955 18.5827 14.6338 18.1839C14.9315 17.9633 15.2345 17.7438 15.5393 17.5229C16.8228 16.5929 18.1388 15.6393 19.2259 14.4887C20.545 13.0927 21.4651 11.4637 21.4651 9.35032C21.4651 7.28171 20.2215 5.54698 18.5239 4.81765C16.8747 4.10911 14.6588 4.29675 12.5529 6.35314C12.4083 6.49441 12.2086 6.57424 12 6.57424C11.7914 6.57424 11.5917 6.49441 11.4471 6.35314C9.34124 4.29675 7.12528 4.10911 5.47609 4.81765ZM12 4.85095C9.63418 2.86148 6.98498 2.58318 4.83799 3.50559C2.5704 4.47981 1 6.74197 1 9.35032C1 11.9139 2.13632 13.8696 3.62641 15.4466C4.81968 16.7095 6.28023 17.7665 7.57015 18.7C7.86255 18.9116 8.14619 19.1169 8.41596 19.3168C8.94011 19.7052 9.50279 20.1193 10.073 20.4325C10.643 20.7455 11.2935 21 12 21C12.7065 21 13.357 20.7455 13.927 20.4325C14.4972 20.1193 15.0599 19.7052 15.584 19.3168C15.8538 19.1169 16.1374 18.9116 16.4299 18.7C17.7198 17.7665 19.1803 16.7095 20.3736 15.4466C21.8637 13.8696 23 11.9139 23 9.35032C23 6.74197 21.4296 4.47981 19.162 3.50559C17.015 2.58318 14.3658 2.86148 12 4.85095Z"
+              fill="#1B1919"
+            />
+          </svg>
+        </label>
+        <img src="./../../img/sneakers-1.png" alt="" />
+        <h2 class="assortment__card-name h4">
+          YEEZY BOOST 350 V2 TRIPLE WHITE
+        </h2>
+        <div class="assortment__card-info">
+          <p>Release date: 27.12.2018</p>
+          <p>55162 pairs</p>
+        </div>
+        <div class="assortment__card-price">
+          <p class="h3">33 990 ₽</p>
+          <button class="button button-orange">КупиТь</button>
+        </div>
+      </div>
+      <div class="assortment__card">
+        <label>
+          <input type="checkbox" />
+          <svg
+            class="assortment__img"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M5.47609 4.81765C3.77852 5.54698 2.53488 7.28171 2.53488 9.35032C2.53488 11.4637 3.45501 13.0927 4.77406 14.4887C5.86121 15.6393 7.17723 16.5929 8.46069 17.5229C8.76552 17.7438 9.06853 17.9633 9.36619 18.1839C9.90445 18.5827 10.3846 18.9327 10.8474 19.1869C11.3105 19.4412 11.6832 19.5574 12 19.5574C12.3168 19.5574 12.6895 19.4412 13.1526 19.1869C13.6154 18.9327 14.0955 18.5827 14.6338 18.1839C14.9315 17.9633 15.2345 17.7438 15.5393 17.5229C16.8228 16.5929 18.1388 15.6393 19.2259 14.4887C20.545 13.0927 21.4651 11.4637 21.4651 9.35032C21.4651 7.28171 20.2215 5.54698 18.5239 4.81765C16.8747 4.10911 14.6588 4.29675 12.5529 6.35314C12.4083 6.49441 12.2086 6.57424 12 6.57424C11.7914 6.57424 11.5917 6.49441 11.4471 6.35314C9.34124 4.29675 7.12528 4.10911 5.47609 4.81765ZM12 4.85095C9.63418 2.86148 6.98498 2.58318 4.83799 3.50559C2.5704 4.47981 1 6.74197 1 9.35032C1 11.9139 2.13632 13.8696 3.62641 15.4466C4.81968 16.7095 6.28023 17.7665 7.57015 18.7C7.86255 18.9116 8.14619 19.1169 8.41596 19.3168C8.94011 19.7052 9.50279 20.1193 10.073 20.4325C10.643 20.7455 11.2935 21 12 21C12.7065 21 13.357 20.7455 13.927 20.4325C14.4972 20.1193 15.0599 19.7052 15.584 19.3168C15.8538 19.1169 16.1374 18.9116 16.4299 18.7C17.7198 17.7665 19.1803 16.7095 20.3736 15.4466C21.8637 13.8696 23 11.9139 23 9.35032C23 6.74197 21.4296 4.47981 19.162 3.50559C17.015 2.58318 14.3658 2.86148 12 4.85095Z"
+              fill="#1B1919"
+            />
+          </svg>
+        </label>
+        <img src="./../../img/sneakers-1.png" alt="" />
+        <h2 class="assortment__card-name h4">
+          YEEZY BOOST 350 V2 TRIPLE WHITE
+        </h2>
+        <div class="assortment__card-info">
+          <p>Release date: 27.12.2018</p>
+          <p>55162 pairs</p>
+        </div>
+        <div class="assortment__card-price">
+          <p class="h3">33 990 ₽</p>
+          <button class="button button-orange">КупиТь</button>
+        </div>
+      </div>
+      <div class="assortment__card">
+        <label>
+          <input type="checkbox" />
+          <svg
+            class="assortment__img"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M5.47609 4.81765C3.77852 5.54698 2.53488 7.28171 2.53488 9.35032C2.53488 11.4637 3.45501 13.0927 4.77406 14.4887C5.86121 15.6393 7.17723 16.5929 8.46069 17.5229C8.76552 17.7438 9.06853 17.9633 9.36619 18.1839C9.90445 18.5827 10.3846 18.9327 10.8474 19.1869C11.3105 19.4412 11.6832 19.5574 12 19.5574C12.3168 19.5574 12.6895 19.4412 13.1526 19.1869C13.6154 18.9327 14.0955 18.5827 14.6338 18.1839C14.9315 17.9633 15.2345 17.7438 15.5393 17.5229C16.8228 16.5929 18.1388 15.6393 19.2259 14.4887C20.545 13.0927 21.4651 11.4637 21.4651 9.35032C21.4651 7.28171 20.2215 5.54698 18.5239 4.81765C16.8747 4.10911 14.6588 4.29675 12.5529 6.35314C12.4083 6.49441 12.2086 6.57424 12 6.57424C11.7914 6.57424 11.5917 6.49441 11.4471 6.35314C9.34124 4.29675 7.12528 4.10911 5.47609 4.81765ZM12 4.85095C9.63418 2.86148 6.98498 2.58318 4.83799 3.50559C2.5704 4.47981 1 6.74197 1 9.35032C1 11.9139 2.13632 13.8696 3.62641 15.4466C4.81968 16.7095 6.28023 17.7665 7.57015 18.7C7.86255 18.9116 8.14619 19.1169 8.41596 19.3168C8.94011 19.7052 9.50279 20.1193 10.073 20.4325C10.643 20.7455 11.2935 21 12 21C12.7065 21 13.357 20.7455 13.927 20.4325C14.4972 20.1193 15.0599 19.7052 15.584 19.3168C15.8538 19.1169 16.1374 18.9116 16.4299 18.7C17.7198 17.7665 19.1803 16.7095 20.3736 15.4466C21.8637 13.8696 23 11.9139 23 9.35032C23 6.74197 21.4296 4.47981 19.162 3.50559C17.015 2.58318 14.3658 2.86148 12 4.85095Z"
+              fill="#1B1919"
+            />
+          </svg>
+        </label>
+        <img src="./../../img/sneakers-1.png" alt="" />
+        <h2 class="assortment__card-name h4">
+          YEEZY BOOST 350 V2 TRIPLE WHITE
+        </h2>
+        <div class="assortment__card-info">
+          <p>Release date: 27.12.2018</p>
+          <p>55162 pairs</p>
+        </div>
+        <div class="assortment__card-price">
+          <p class="h3">33 990 ₽</p>
+          <button class="button button-orange">КупиТь</button>
+        </div>
+      </div>
+      <div class="assortment__card">
+        <label>
+          <input type="checkbox" />
+          <svg
+            class="assortment__img"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M5.47609 4.81765C3.77852 5.54698 2.53488 7.28171 2.53488 9.35032C2.53488 11.4637 3.45501 13.0927 4.77406 14.4887C5.86121 15.6393 7.17723 16.5929 8.46069 17.5229C8.76552 17.7438 9.06853 17.9633 9.36619 18.1839C9.90445 18.5827 10.3846 18.9327 10.8474 19.1869C11.3105 19.4412 11.6832 19.5574 12 19.5574C12.3168 19.5574 12.6895 19.4412 13.1526 19.1869C13.6154 18.9327 14.0955 18.5827 14.6338 18.1839C14.9315 17.9633 15.2345 17.7438 15.5393 17.5229C16.8228 16.5929 18.1388 15.6393 19.2259 14.4887C20.545 13.0927 21.4651 11.4637 21.4651 9.35032C21.4651 7.28171 20.2215 5.54698 18.5239 4.81765C16.8747 4.10911 14.6588 4.29675 12.5529 6.35314C12.4083 6.49441 12.2086 6.57424 12 6.57424C11.7914 6.57424 11.5917 6.49441 11.4471 6.35314C9.34124 4.29675 7.12528 4.10911 5.47609 4.81765ZM12 4.85095C9.63418 2.86148 6.98498 2.58318 4.83799 3.50559C2.5704 4.47981 1 6.74197 1 9.35032C1 11.9139 2.13632 13.8696 3.62641 15.4466C4.81968 16.7095 6.28023 17.7665 7.57015 18.7C7.86255 18.9116 8.14619 19.1169 8.41596 19.3168C8.94011 19.7052 9.50279 20.1193 10.073 20.4325C10.643 20.7455 11.2935 21 12 21C12.7065 21 13.357 20.7455 13.927 20.4325C14.4972 20.1193 15.0599 19.7052 15.584 19.3168C15.8538 19.1169 16.1374 18.9116 16.4299 18.7C17.7198 17.7665 19.1803 16.7095 20.3736 15.4466C21.8637 13.8696 23 11.9139 23 9.35032C23 6.74197 21.4296 4.47981 19.162 3.50559C17.015 2.58318 14.3658 2.86148 12 4.85095Z"
+              fill="#1B1919"
+            />
+          </svg>
+        </label>
+        <img src="./../../img/sneakers-1.png" alt="" />
+        <h2 class="assortment__card-name h4">
+          YEEZY BOOST 350 V2 TRIPLE WHITE
+        </h2>
+        <div class="assortment__card-info">
+          <p>Release date: 27.12.2018</p>
+          <p>55162 pairs</p>
+        </div>
+        <div class="assortment__card-price">
+          <p class="h3">33 990 ₽</p>
+          <button class="button button-orange">КупиТь</button>
+        </div>
+      </div>
+    </div>
+    <button class="button button-grey center">Показать все</button>
+  </div>
+</section>
+
+      <section class="exclusive">
+  <div class="container">
+    <div class="exclusive__title">
+      <h1>New yeezy</h1>
+      <span>ЭКСКЛЮЗИВНЫЕ НОВИНКИ ОТ КАНЬЕ УЭСТА</span>
+    </div>
+    <div class="swiper" id="swiper3">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="exclusive__card">
+            <img src="./../../img/sneakers-1.png" alt="" />
+            <div class="exclusive__card-name h4">YEEZY 450 CLOUD WHITEjh</div>
+            <div class="exclusive__card-info">
+              впервые замеченная на Канье Уэсте в 2020 году во время недели моды
+              в Париже. Новый силуэт Yeezy сразу же привлек...
+            </div>
+            <div class="exclusive__card-read-more">
+              <button class="button button-grey button-tite">Подробнее</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="exclusive__card">
+            <img src="./../../img/sneakers-1.png" alt="" />
+            <div class="exclusive__card-name h4">YEEZY 450 CLOUD WHITEjh</div>
+            <div class="exclusive__card-info">
+              впервые замеченная на Канье Уэсте в 2020 году во время недели моды
+              в Париже. Новый силуэт Yeezy сразу же привлек...
+            </div>
+            <div class="exclusive__card-read-more">
+              <button class="button button-grey button-tite">Подробнее</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="exclusive__card">
+            <img src="./../../img/sneakers-1.png" alt="" />
+            <div class="exclusive__card-name h4">YEEZY 450 CLOUD WHITEjh</div>
+            <div class="exclusive__card-info">
+              впервые замеченная на Канье Уэсте в 2020 году во время недели моды
+              в Париже. Новый силуэт Yeezy сразу же привлек...
+            </div>
+            <div class="exclusive__card-read-more">
+              <button class="button button-grey button-tite">Подробнее</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="exclusive__card">
+            <img src="./../../img/sneakers-1.png" alt="" />
+            <div class="exclusive__card-name h4">YEEZY 450 CLOUD WHITEjh</div>
+            <div class="exclusive__card-info">
+              впервые замеченная на Канье Уэсте в 2020 году во время недели моды
+              в Париже. Новый силуэт Yeezy сразу же привлек...
+            </div>
+            <div class="exclusive__card-read-more">
+              <button class="button button-black button-tite">Подробнее</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="exclusive__card">
+            <img src="./../../img/sneakers-1.png" alt="" />
+            <div class="exclusive__card-name h4">YEEZY 450 CLOUD WHITEjh</div>
+            <div class="exclusive__card-info">
+              впервые замеченная на Канье Уэсте в 2020 году во время недели моды
+              в Париже. Новый силуэт Yeezy сразу же привлек...
+            </div>
+            <div class="exclusive__card-read-more">
+              <button class="button button-grey">Подробнее</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="next-orange">
+        <img src="./../../img/icon/arrow-orange.svg" alt="" />
+      </button>
+    </div>
+  </div>
+</section>
+ <section class="checking">
+  <div class="checking__body">
+    <div class="checking__img">
+      <img src="./../../img/img-bg.jpg" alt="" />
+    </div>
+    <div class="checking__info">
+      <div class="checking__info-title">
+        <div class="checking__info-title--top">
+          <img src="./../../img/icon/svg-1.svg" width="35" height="40" alt="" />
+          <h1>ПРОВЕРКА НА ОРИГИНАЛЬНОСТЬ</h1>
+        </div>
+        <div class="checking__info__desc opacity">
+          Наше ключевое преимущество - многоэтапная система верификации. Мы
+          проверяем происхождение каждой пары перед продажей, осматривая их по
+          12 параметрам: включая подошву, ярлычок, стельку и коробку.
+        </div>
+      </div>
+      <div class="checking__info-cards">
+        <div class="checking__info-card">
+          <div class="checking__info-card-img">
+            <img src="./../../img/icon/svg-2.svg" alt="" />
+          </div>
+          <div class="checking__info-card--info">
+            <h2>ДОСТАВКА</h2>
+            <div class="checking__info-card--span">
+              <span>Москва и МО: 8-14 дней</span>
+              <span>Регионы РФ: 10-20</span>
+              <span>Другие страны: 14-30 дней</span>
+            </div>
+          </div>
+        </div>
+        <div class="checking__info-card">
+          <div class="checking__info-card-img">
+            <img src="./../../img/icon/svg-3.svg" alt="" />
+          </div>
+          <div class="checking__info-card--info">
+            <h2>ПРИМЕРКА</h2>
+            <div class="opacity">
+              Если какая-то пара не подошла, откажитесь от нее и оплатите заказ
+              частично
+            </div>
+          </div>
+        </div>
+        <div class="checking__info-card">
+          <div class="checking__info-card-img">
+            <img src="./../../img/icon/svg-4.svg" alt="" />
+          </div>
+          <div class="checking__info-card--info">
+            <h2>ГАРАНТИЯ</h2>
+            <div class="opacity">
+              Обмен/возврат осуществляется в соответствии с законодательством РФ
+            </div>
+          </div>
+        </div>
+        <div class="checking__info-card">
+          <div class="checking__info-card-img">
+            <img src="./../../img/icon/svg-5.svg" alt="" />
+          </div>
+          <div class="checking__info-card--info">
+            <h2>ОПЛАТА</h2>
+            <div class="opacity">
+              Оплата производится при получении заказа, после его осмотра. При
+              предоплате 30% - доставка бесплатна
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="feedback">
+  <div class="container">
+    <div class="feedback__body">
+      <div class="feedback__left">
+        <div class="feedback__info">
+          <h1>Для тех, кто в теме</h1>
+          <div class="opacity">
+            Подпишись на нашу рассылку и получи <b>скидку 10%</b> на следующий
+            заказ!
+          </div>
+        </div>
+        <div class="feedback__center">
+          <img src="./../../img/men.png" alt="" />
+        </div>
+      </div>
+      <form class="feedback__form">
+        <input type="text" placeholder="Введите ваш E-MAIL" />
+        <button class="button button-black">Подписаться</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__body">
+      <div class="footer__overlay">
+        <div class="footer__left">
+          <img src="./img/logo/logo-white.svg" alt="" />
+          <div class="opacity">© 2018 - 2025</div>
+          <u class="opacity">Политика конфиденциальности</u>
+          <div class="footer__left-circle">
+            <h4>Оригинальные YEEZY BOOST</h4>
+            <p>ПО ЛУЧШЕЙ ЦЕНЕ</p>
+          </div>
+        </div>
+        <div class="footer__info">
+          <nav class="footer__nav">
+            <button class="select-trigger">
+              <h1 class="h3">Info</h1>
+              <span
+                ><svg
+                  width="13"
+                  height="9"
+                  viewBox="0 0 13 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M13 0.5H0L6 8.5L13 0.5Z" fill="white" /></svg
+              ></span>
+            </button>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">100% оригинал </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Контакты</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Доставка</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Возврат </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">FAQ</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Таблица размеров </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Таблица размеров для детей</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__yeezys">
+          <nav class="footer__nav">
+            <button class="select-trigger">
+              <h1 class="h3">YEEZYS</h1>
+              <span
+                ><svg
+                  width="13"
+                  height="9"
+                  viewBox="0 0 13 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M13 0.5H0L6 8.5L13 0.5Z" fill="white" /></svg
+              ></span>
+            </button>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Yeezy 350 V2</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Yeezy 380</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Yeezy 500</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Yeezy 450</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Yeezy 700</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Slide</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Foam Runner</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Kids</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__right">
+        <h2>8 (800) 600-54-80</h2>
+        <a href="#" class="mobile__feedback-link"
+          ><img src="./../../img/icon/telegramm.svg" alt=""
+        /></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__images">
+    <svg
+      class="img__top"
+      width="807"
+      height="194"
+      viewBox="0 0 807 194"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        opacity="0.1"
+        d="M94.394 131.908L94.3492 132.007V132.115V224.669L91.5121 227.5H61.4049L58.5677 224.669V131.49V131.382L58.5225 131.283L0.568407 4.41356L3.08995 0.5H36.0321L38.744 1.92411L75.7677 84.2216L76.2189 85.2246L76.678 84.2252L114.487 1.91943L117.047 0.5H149.678L152.345 4.42145L94.394 131.908ZM218.81 35.574H218.31V36.074V95.8849V96.3849H218.81H301.245L304.238 99.3718V128.628L301.245 131.615H218.81H218.31V132.115V191.926V192.426H218.81H307.995L311.281 195.277V224.649L307.995 227.5H185.359L182.373 224.662V3.33791L185.359 0.5H307.995L311.281 3.35144V32.7225L307.995 35.574H218.81ZM384.092 192.426H473.277L476.563 195.277V224.649L473.277 227.5H350.641L347.654 224.662V3.33791L350.641 0.5H473.277L476.563 3.35144V32.7225L473.277 35.574H384.092H383.592V36.074V95.8849V96.3849H384.092H466.526L469.52 99.3718V128.628L466.526 131.615H384.092H383.592V132.115V191.926V192.426H384.092ZM546.841 132.35L547.233 131.615H546.4H528.607L525.614 128.628V99.6709L528.621 96.3849H565.182H565.483L565.624 96.1186L597.084 36.62L597.472 35.8863H596.642H519.353L516.066 33.0349V3.35142L519.353 0.5H636.824L639.81 3.33791V28.9224L604.495 95.651L604.107 96.3849H604.937H623.656L626.663 99.6709V128.628L623.669 131.615H586.468H586.166L586.025 131.883L554.879 191.382L554.495 192.114H555.322H641.369L644.506 194.959V224.655L641.369 227.5H514.827L511.84 224.662V197.985L546.841 132.35ZM748.761 84.2252L786.57 1.91945L789.13 0.5H821.762L824.429 4.42145L766.477 131.908L766.432 132.007V132.115V224.669L763.595 227.5H733.488L730.651 224.669V131.49V131.382L730.606 131.283L672.651 4.41356L675.173 0.5H708.115L710.827 1.92412L747.851 84.2216L748.302 85.2246L748.761 84.2252Z"
+        stroke="white"
+      />
+    </svg>
+    <svg
+      class="img__center"
+      width="807"
+      height="194"
+      viewBox="0 0 807 194"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        opacity="0.1"
+        d="M94.394 131.908L94.3492 132.007V132.115V224.669L91.5121 227.5H61.4049L58.5677 224.669V131.49V131.382L58.5225 131.283L0.568407 4.41356L3.08995 0.5H36.0321L38.744 1.92411L75.7677 84.2216L76.2189 85.2246L76.678 84.2252L114.487 1.91943L117.047 0.5H149.678L152.345 4.42145L94.394 131.908ZM218.81 35.574H218.31V36.074V95.8849V96.3849H218.81H301.245L304.238 99.3718V128.628L301.245 131.615H218.81H218.31V132.115V191.926V192.426H218.81H307.995L311.281 195.277V224.649L307.995 227.5H185.359L182.373 224.662V3.33791L185.359 0.5H307.995L311.281 3.35144V32.7225L307.995 35.574H218.81ZM384.092 192.426H473.277L476.563 195.277V224.649L473.277 227.5H350.641L347.654 224.662V3.33791L350.641 0.5H473.277L476.563 3.35144V32.7225L473.277 35.574H384.092H383.592V36.074V95.8849V96.3849H384.092H466.526L469.52 99.3718V128.628L466.526 131.615H384.092H383.592V132.115V191.926V192.426H384.092ZM546.841 132.35L547.233 131.615H546.4H528.607L525.614 128.628V99.6709L528.621 96.3849H565.182H565.483L565.624 96.1186L597.084 36.62L597.472 35.8863H596.642H519.353L516.066 33.0349V3.35142L519.353 0.5H636.824L639.81 3.33791V28.9224L604.495 95.651L604.107 96.3849H604.937H623.656L626.663 99.6709V128.628L623.669 131.615H586.468H586.166L586.025 131.883L554.879 191.382L554.495 192.114H555.322H641.369L644.506 194.959V224.655L641.369 227.5H514.827L511.84 224.662V197.985L546.841 132.35ZM748.761 84.2252L786.57 1.91945L789.13 0.5H821.762L824.429 4.42145L766.477 131.908L766.432 132.007V132.115V224.669L763.595 227.5H733.488L730.651 224.669V131.49V131.382L730.606 131.283L672.651 4.41356L675.173 0.5H708.115L710.827 1.92412L747.851 84.2216L748.302 85.2246L748.761 84.2252Z"
+        stroke="white"
+      />
+    </svg>
+    <svg
+      class="img__bottom"
+      width="807"
+      height="194"
+      viewBox="0 0 807 194"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        opacity="0.1"
+        d="M94.394 131.908L94.3492 132.007V132.115V224.669L91.5121 227.5H61.4049L58.5677 224.669V131.49V131.382L58.5225 131.283L0.568407 4.41356L3.08995 0.5H36.0321L38.744 1.92411L75.7677 84.2216L76.2189 85.2246L76.678 84.2252L114.487 1.91943L117.047 0.5H149.678L152.345 4.42145L94.394 131.908ZM218.81 35.574H218.31V36.074V95.8849V96.3849H218.81H301.245L304.238 99.3718V128.628L301.245 131.615H218.81H218.31V132.115V191.926V192.426H218.81H307.995L311.281 195.277V224.649L307.995 227.5H185.359L182.373 224.662V3.33791L185.359 0.5H307.995L311.281 3.35144V32.7225L307.995 35.574H218.81ZM384.092 192.426H473.277L476.563 195.277V224.649L473.277 227.5H350.641L347.654 224.662V3.33791L350.641 0.5H473.277L476.563 3.35144V32.7225L473.277 35.574H384.092H383.592V36.074V95.8849V96.3849H384.092H466.526L469.52 99.3718V128.628L466.526 131.615H384.092H383.592V132.115V191.926V192.426H384.092ZM546.841 132.35L547.233 131.615H546.4H528.607L525.614 128.628V99.6709L528.621 96.3849H565.182H565.483L565.624 96.1186L597.084 36.62L597.472 35.8863H596.642H519.353L516.066 33.0349V3.35142L519.353 0.5H636.824L639.81 3.33791V28.9224L604.495 95.651L604.107 96.3849H604.937H623.656L626.663 99.6709V128.628L623.669 131.615H586.468H586.166L586.025 131.883L554.879 191.382L554.495 192.114H555.322H641.369L644.506 194.959V224.655L641.369 227.5H514.827L511.84 224.662V197.985L546.841 132.35ZM748.761 84.2252L786.57 1.91945L789.13 0.5H821.762L824.429 4.42145L766.477 131.908L766.432 132.007V132.115V224.669L763.595 227.5H733.488L730.651 224.669V131.49V131.382L730.606 131.283L672.651 4.41356L675.173 0.5H708.115L710.827 1.92412L747.851 84.2216L748.302 85.2246L748.761 84.2252Z"
+        stroke="white"
+      />
+    </svg>
+  </div>
+</footer>
+
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>

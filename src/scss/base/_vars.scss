@@ -1,0 +1,31 @@
+:root {
+  --container-width: 1260px;
+  --container-padding: 15px;
+
+  --font-main: "Poppins", sans-serif;
+  --font-accent: "Playfair Display", serif;
+
+  --page-bg: #fff;
+  --text-color: #000;
+  --accent: #ac182c;
+
+  --laptop-size: 1199px;
+  --tablet-size: 959px;
+  --mobile-size: 599px;
+
+  //colors
+
+  --white: #fff;
+  --black: #1b1919;
+  --pink: #ff4638;
+  --grey: #f2f2f2;
+  --grey-defualt: #e4e4e4;
+  --gray-bg: #ffbb68;
+  --link-yellow: #e79027;
+  --checkbox-border: #c7c7c7;
+}
+
+.dark {
+  --page-bg: #252526;
+  --text-color: #fff;
+}

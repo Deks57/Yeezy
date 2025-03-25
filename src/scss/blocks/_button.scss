@@ -1,0 +1,43 @@
+@use "../helpers" as *;
+
+.button {
+  border-radius: rem(5);
+  padding: fluid(15, 12) fluid(25, 16);
+  font-weight: 700;
+  color: var(--black);
+  text-transform: uppercase;
+
+  &-grey {
+    border: 1px solid var(--black);
+
+    // @include mobile {
+    //   color: var(--white);
+    // }
+  }
+
+  &-white {
+    background: var(--white);
+  }
+
+  &-orange {
+    background-color: var(--gray-bg);
+  }
+
+  &-search {
+    background-color: var(--gray-bg);
+  }
+
+  &-basket {
+    background: var(--black);
+  }
+
+  &-black {
+    background: var(--black);
+    color: var(--white);
+  }
+
+  &-tite {
+    font-size: rem(15);
+    padding: rem(12) fluid(46, 16);
+  }
+}

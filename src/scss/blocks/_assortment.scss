@@ -1,0 +1,88 @@
+@use "../helpers" as *;
+
+.assortment {
+  margin-top: rem(90);
+
+  &__title {
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: rem(20) rem(30);
+    margin: rem(30) 0 rem(40);
+
+    @include tablet {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+      margin: rem(20) 0 rem(35);
+    }
+  }
+
+  &__card {
+    background-color: var(--white);
+    padding: rem(26) rem(20) rem(15);
+    border-radius: rem(5);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+
+    @include laptop {
+      row-gap: rem(5);
+    }
+
+    @include mobile {
+      padding: rem(10) rem(10) rem(30);
+    }
+
+    &-info {
+      display: grid;
+      row-gap: rem(10);
+      padding-block: rem(15);
+    }
+
+    & img {
+      height: fluid(170, 118);
+      object-fit: cover;
+    }
+
+    label {
+      position: absolute;
+      right: 20px;
+    }
+
+    input {
+      display: none;
+    }
+
+    input:checked + .assortment__img path {
+      fill-rule: inherit;
+    }
+
+    &-price {
+      font-weight: 700;
+      color: var(--black);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: rem(30);
+
+      @include laptop {
+        flex-direction: column;
+        row-gap: rem(5);
+      }
+    }
+  }
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}

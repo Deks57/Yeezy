@@ -1,0 +1,92 @@
+@use "../helpers" as *;
+
+.checking {
+  max-width: rem(1130);
+  margin: 0 auto;
+  padding: 0 rem(20);
+  width: 100%;
+
+  &__img {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: minmax(100px, 416px) 1fr;
+    column-gap: rem(100);
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__info {
+    &-title--top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: rem(12);
+
+      @include mobile {
+        flex-direction: column;
+        row-gap: rem(5);
+      }
+    }
+
+    &__desc {
+      text-align: center;
+      padding: rem(17) 0 rem(42);
+
+      @include tablet {
+        padding: rem(8) 0 rem(30);
+      }
+    }
+
+    &-title h1 {
+      font-size: rem(26);
+      text-align: center;
+
+      @include tablet {
+      }
+    }
+
+    &-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: rem(100) rem(40);
+
+      @include tablet {
+        gap: rem(50) rem(30);
+      }
+
+      @include mobile {
+        justify-content: center;
+        grid-template-columns: rem(280);
+      }
+    }
+    &-card {
+      display: grid;
+      grid-template-columns: rem(42) 1fr;
+      column-gap: rem(20);
+
+      & h2 {
+        padding-bottom: rem(18);
+
+        @include tablet {
+          padding: rem(5) 0 rem(15);
+        }
+      }
+
+      @include tablet {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      &--span {
+        display: grid;
+        row-gap: rem(10);
+      }
+    }
+  }
+}
