@@ -7,28 +7,54 @@
   color: var(--black);
   text-transform: uppercase;
 
+  &:hover {
+    transition-duration: 0.3s;
+  }
+
   &-grey {
     border: 1px solid var(--black);
 
     // @include mobile {
     //   color: var(--white);
     // }
+
+    &:hover {
+      background: var(--white);
+      border: 0;
+    }
   }
 
   &-white {
     background: var(--white);
+
+    &:hover {
+      border: 1px solid var(--black);
+      background-color: inherit;
+    }
   }
 
   &-orange {
     background-color: var(--gray-bg);
+
+    &:hover {
+      background-color: #f39d2c;
+    }
   }
 
   &-search {
     background-color: var(--gray-bg);
+
+    &:hover {
+      background-color: #f39d2c;
+    }
   }
 
   &-basket {
     background: var(--black);
+
+    &:hover {
+      background-color: #3b3b3b;
+    }
   }
 
   &-black {

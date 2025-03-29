@@ -7,13 +7,14 @@
   flex-direction: column;
   justify-content: space-between;
   padding: rem(8) rem(4.25);
-  // color: var(--write);
-  // background-color: transparent;
   border: none;
-  z-index: 10;
+  z-index: 20;
 
   &.active {
     .burger-button__line {
+      z-index: 1000;
+      background-color: var(--white);
+      transition: all 0.3;
       &:first-child {
         rotate: 45deg;
         transform-origin: 0;

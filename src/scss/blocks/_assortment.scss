@@ -22,6 +22,7 @@
     @include mobile {
       grid-template-columns: repeat(2, 1fr);
       margin: rem(20) 0 rem(35);
+      gap: rem(10);
     }
   }
 
@@ -33,6 +34,7 @@
     flex-direction: column;
     text-align: center;
     position: relative;
+    user-select: none;
 
     @include laptop {
       row-gap: rem(5);
@@ -73,10 +75,21 @@
       align-items: center;
       justify-content: center;
       gap: rem(30);
+      margin-top: auto;
 
       @include laptop {
         flex-direction: column;
         row-gap: rem(5);
+      }
+
+      & button {
+        display: none;
+      }
+    }
+
+    &:hover {
+      button {
+        display: block;
       }
     }
   }

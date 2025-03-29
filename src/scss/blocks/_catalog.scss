@@ -82,28 +82,35 @@
     justify-content: flex-start;
     row-gap: rem(5);
     // height: fit-content;
-
-    transition: all 0.4s ease 0s;
-    // opacity: 0;
-    display: none;
+    opacity: 0;
+    // display: none;
     pointer-events: none;
-    // position: absolute;
+    position: absolute;
     // top: 100%;
     // left: 0;
-    // z-index: 100;
+    z-index: 100;
+    transition: all 1s ease;
 
     @include mobile {
+      display: none;
+      // opacity: 1;
       box-shadow: none;
       background: none;
       padding: 0;
       padding-top: rem(12);
+      position: static;
     }
   }
 
   &__nav.active .catalog__list {
-    // opacity: 1;
+    opacity: 1;
     display: flex;
     pointer-events: all;
+    transition: all 1s ease;
+  }
+
+  &__nav span {
+    transition: all 0.3s ease;
   }
 
   &__nav.active span {

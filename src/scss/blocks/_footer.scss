@@ -32,8 +32,11 @@
 
   &__left {
     display: grid;
-    text-align: center;
     row-gap: rem(16);
+
+    @include mobile {
+      text-align: center;
+    }
 
     & img {
       @include tablet {
@@ -42,25 +45,27 @@
     }
 
     &-circle {
-      text-align: center;
       color: var(--black);
       display: flex;
       flex-direction: column;
+      text-align: center;
       justify-content: center;
       row-gap: rem(5);
       background: var(--gray-bg);
       border-radius: 50%;
-      width: 180px;
+      max-width: 180px;
+      width: 100%;
       height: 180px;
       letter-spacing: 0.05em;
       margin-top: rem(20);
 
       @include mobile {
         border-radius: rem(6);
-        width: 280px;
-        height: 83px;
-        padding: rem(20) 0;
+        max-width: 280px;
+        width: 100%;
+        padding: rem(20) rem(5);
         margin-bottom: rem(32);
+        height: auto;
       }
     }
   }
@@ -76,7 +81,9 @@
   }
 
   &__yeezys {
-    margin: rem(22) 0 rem(50);
+    @include mobile {
+      margin: rem(22) 0 rem(50);
+    }
   }
 
   &__nav.active .footer__list {
@@ -84,13 +91,15 @@
     height: fit-content;
   }
 
+  &__nav.active .select-trigger span {
+    transform: rotate(180deg);
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
     row-gap: rem(15);
     margin-top: rem(22);
-    height: 0;
-    transition: all 0.4s ease 0s;
 
     @include mobile {
       display: none;

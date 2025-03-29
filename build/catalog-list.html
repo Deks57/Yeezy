@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,14 +13,14 @@
     <div class="header__top">
       <div class="header__logo">
         <a href="index.html" class="logo"
-          ><img src="./../../img/logo/logo.svg" alt=""
+          ><img src="./img/logo/logo.svg" alt=""
         /></a>
       </div>
       <div class="header__top-info">
         <div class="header__feedback">
           <a href="#" class="num h2">8 (800) 600-54-80</a>
           <a href="#" class="telegramm"
-            ><img src="./../../img/icon/telegramm.svg" alt=""
+            ><img src="./img/icon/telegramm.svg" alt=""
           /></a>
         </div>
         <div class="header__button">
@@ -33,10 +33,10 @@
         </div>
         <div class="header__icon">
           <a href="#" class="button-search header__link"
-            ><img src="./../../img/icon/search.svg" alt=""
+            ><img src="./img/icon/search.svg" alt=""
           /></a>
-          <a href="#" class="button-basket header__link"
-            ><img src="./../../img/icon/basket.svg" alt=""
+          <a href="products.html" class="button-basket header__link"
+            ><img src="./img/icon/basket.svg" alt=""
           /></a>
         </div>
       </div>
@@ -105,13 +105,13 @@
 
   <div class="header-mobile__link-icon">
     <a href="#" class="mobile__feedback-link"
-      ><img src="./../../img/icon/telegramm.svg" alt=""
+      ><img src="./img/icon/telegramm.svg" alt=""
     /></a>
     <a href="#" class="mobile__feedback-link"
-      ><img src="./../../img/icon/telegramm.svg" alt=""
+      ><img src="./img/icon/telegramm.svg" alt=""
     /></a>
     <a href="#" class="mobile__feedback-link"
-      ><img src="./../../img/icon/telegramm.svg" alt=""
+      ><img src="./img/icon/telegramm.svg" alt=""
     /></a>
   </div>
 </div>
@@ -153,7 +153,50 @@
 </header>
 
     <main class="main">
-      <section class="catalog">
+      <button class="favorites" data-js-favorites-button>
+  <span>0</span>
+  <img src="./img/icon/heart.svg" width="32" height="32" alt="" />
+</button>
+<div class="favorites__list" data-js-favorites-overlay>
+  <div class="favorites__list-header">
+    <div class="favorites__title h3">Избранное</div>
+    <img src="./img/icon/close-img.svg" alt="" data-js-close-overlay />
+  </div>
+  <div class="favorites__card">
+    <img
+      src="./img/sneakers-1.png"
+      alt=""
+      width="124"
+      height="90"
+      class="favorites__card-img"
+    />
+    <div class="favorites__card-info">
+      <div class="favorites__card-name">
+        ADIDAS YEEZY BOOST 350 PIRATE BLACK
+      </div>
+      <div class="favorites__card-prise">33 990 ₽</div>
+    </div>
+    <label class="favorites__heart">
+      <input type="checkbox" data-js-favorites />
+      <svg
+        class="assortment__img"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M5.47609 4.81765C3.77852 5.54698 2.53488 7.28171 2.53488 9.35032C2.53488 11.4637 3.45501 13.0927 4.77406 14.4887C5.86121 15.6393 7.17723 16.5929 8.46069 17.5229C8.76552 17.7438 9.06853 17.9633 9.36619 18.1839C9.90445 18.5827 10.3846 18.9327 10.8474 19.1869C11.3105 19.4412 11.6832 19.5574 12 19.5574C12.3168 19.5574 12.6895 19.4412 13.1526 19.1869C13.6154 18.9327 14.0955 18.5827 14.6338 18.1839C14.9315 17.9633 15.2345 17.7438 15.5393 17.5229C16.8228 16.5929 18.1388 15.6393 19.2259 14.4887C20.545 13.0927 21.4651 11.4637 21.4651 9.35032C21.4651 7.28171 20.2215 5.54698 18.5239 4.81765C16.8747 4.10911 14.6588 4.29675 12.5529 6.35314C12.4083 6.49441 12.2086 6.57424 12 6.57424C11.7914 6.57424 11.5917 6.49441 11.4471 6.35314C9.34124 4.29675 7.12528 4.10911 5.47609 4.81765ZM12 4.85095C9.63418 2.86148 6.98498 2.58318 4.83799 3.50559C2.5704 4.47981 1 6.74197 1 9.35032C1 11.9139 2.13632 13.8696 3.62641 15.4466C4.81968 16.7095 6.28023 17.7665 7.57015 18.7C7.86255 18.9116 8.14619 19.1169 8.41596 19.3168C8.94011 19.7052 9.50279 20.1193 10.073 20.4325C10.643 20.7455 11.2935 21 12 21C12.7065 21 13.357 20.7455 13.927 20.4325C14.4972 20.1193 15.0599 19.7052 15.584 19.3168C15.8538 19.1169 16.1374 18.9116 16.4299 18.7C17.7198 17.7665 19.1803 16.7095 20.3736 15.4466C21.8637 13.8696 23 11.9139 23 9.35032C23 6.74197 21.4296 4.47981 19.162 3.50559C17.015 2.58318 14.3658 2.86148 12 4.85095Z"
+          fill="#1B1919"
+        />
+      </svg>
+    </label>
+  </div>
+</div>
+ <section class="catalog">
   <div class="container">
     <h1>YEEZY BOOST 350</h1>
     <div class="catalog__filters">
@@ -311,7 +354,7 @@
             />
           </svg>
         </label>
-        <img src="./../../img/sneakers-1.png" alt="" />
+        <img src="/img/sneakers-1.png" alt="" />
         <h2 class="assortment__card-name h4">
           YEEZY BOOST 350 V2 TRIPLE WHITE
         </h2>
@@ -343,7 +386,7 @@
             />
           </svg>
         </label>
-        <img src="./../../img/sneakers-1.png" alt="" />
+        <img src="/img/sneakers-1.png" alt="" />
         <h2 class="assortment__card-name h4">
           YEEZY BOOST 350 V2 TRIPLE WHITE
         </h2>
@@ -375,7 +418,7 @@
             />
           </svg>
         </label>
-        <img src="./../../img/sneakers-1.png" alt="" />
+        <img src="/img/sneakers-1.png" alt="" />
         <h2 class="assortment__card-name h4">
           YEEZY BOOST 350 V2 TRIPLE WHITE
         </h2>
@@ -407,7 +450,7 @@
             />
           </svg>
         </label>
-        <img src="./../../img/sneakers-1.png" alt="" />
+        <img src="/img/sneakers-1.png" alt="" />
         <h2 class="assortment__card-name h4">
           YEEZY BOOST 350 V2 TRIPLE WHITE
         </h2>
@@ -439,7 +482,7 @@
             />
           </svg>
         </label>
-        <img src="./../../img/sneakers-1.png" alt="" />
+        <img src="/img/sneakers-1.png" alt="" />
         <h2 class="assortment__card-name h4">
           YEEZY BOOST 350 V2 TRIPLE WHITE
         </h2>
@@ -471,7 +514,7 @@
             />
           </svg>
         </label>
-        <img src="./../../img/sneakers-1.png" alt="" />
+        <img src="/img/sneakers-1.png" alt="" />
         <h2 class="assortment__card-name h4">
           YEEZY BOOST 350 V2 TRIPLE WHITE
         </h2>
@@ -503,7 +546,7 @@
             />
           </svg>
         </label>
-        <img src="./../../img/sneakers-1.png" alt="" />
+        <img src="/img/sneakers-1.png" alt="" />
         <h2 class="assortment__card-name h4">
           YEEZY BOOST 350 V2 TRIPLE WHITE
         </h2>
@@ -535,7 +578,7 @@
             />
           </svg>
         </label>
-        <img src="./../../img/sneakers-1.png" alt="" />
+        <img src="/img/sneakers-1.png" alt="" />
         <h2 class="assortment__card-name h4">
           YEEZY BOOST 350 V2 TRIPLE WHITE
         </h2>
@@ -567,7 +610,7 @@
             />
           </svg>
         </label>
-        <img src="./../../img/sneakers-1.png" alt="" />
+        <img src="/img/sneakers-1.png" alt="" />
         <h2 class="assortment__card-name h4">
           YEEZY BOOST 350 V2 TRIPLE WHITE
         </h2>
@@ -599,7 +642,7 @@
             />
           </svg>
         </label>
-        <img src="./../../img/sneakers-1.png" alt="" />
+        <img src="/img/sneakers-1.png" alt="" />
         <h2 class="assortment__card-name h4">
           YEEZY BOOST 350 V2 TRIPLE WHITE
         </h2>
@@ -631,7 +674,7 @@
             />
           </svg>
         </label>
-        <img src="./../../img/sneakers-1.png" alt="" />
+        <img src="/img/sneakers-1.png" alt="" />
         <h2 class="assortment__card-name h4">
           YEEZY BOOST 350 V2 TRIPLE WHITE
         </h2>
@@ -663,7 +706,7 @@
             />
           </svg>
         </label>
-        <img src="./../../img/sneakers-1.png" alt="" />
+        <img src="/img/sneakers-1.png" alt="" />
         <h2 class="assortment__card-name h4">
           YEEZY BOOST 350 V2 TRIPLE WHITE
         </h2>
@@ -695,7 +738,7 @@
             />
           </svg>
         </label>
-        <img src="./../../img/sneakers-1.png" alt="" />
+        <img src="/img/sneakers-1.png" alt="" />
         <h2 class="assortment__card-name h4">
           YEEZY BOOST 350 V2 TRIPLE WHITE
         </h2>
@@ -727,7 +770,7 @@
             />
           </svg>
         </label>
-        <img src="./../../img/sneakers-1.png" alt="" />
+        <img src="/img/sneakers-1.png" alt="" />
         <h2 class="assortment__card-name h4">
           YEEZY BOOST 350 V2 TRIPLE WHITE
         </h2>
@@ -759,7 +802,7 @@
             />
           </svg>
         </label>
-        <img src="./../../img/sneakers-1.png" alt="" />
+        <img src="/img/sneakers-1.png" alt="" />
         <h2 class="assortment__card-name h4">
           YEEZY BOOST 350 V2 TRIPLE WHITE
         </h2>
@@ -791,7 +834,7 @@
             />
           </svg>
         </label>
-        <img src="./../../img/sneakers-1.png" alt="" />
+        <img src="/img/sneakers-1.png" alt="" />
         <h2 class="assortment__card-name h4">
           YEEZY BOOST 350 V2 TRIPLE WHITE
         </h2>
@@ -823,7 +866,7 @@
             />
           </svg>
         </label>
-        <img src="./../../img/sneakers-1.png" alt="" />
+        <img src="/img/sneakers-1.png" alt="" />
         <h2 class="assortment__card-name h4">
           YEEZY BOOST 350 V2 TRIPLE WHITE
         </h2>
@@ -855,7 +898,7 @@
             />
           </svg>
         </label>
-        <img src="./../../img/sneakers-1.png" alt="" />
+        <img src="/img/sneakers-1.png" alt="" />
         <h2 class="assortment__card-name h4">
           YEEZY BOOST 350 V2 TRIPLE WHITE
         </h2>
@@ -887,7 +930,7 @@
             />
           </svg>
         </label>
-        <img src="./../../img/sneakers-1.png" alt="" />
+        <img src="/img/sneakers-1.png" alt="" />
         <h2 class="assortment__card-name h4">
           YEEZY BOOST 350 V2 TRIPLE WHITE
         </h2>
@@ -919,7 +962,7 @@
             />
           </svg>
         </label>
-        <img src="./../../img/sneakers-1.png" alt="" />
+        <img src="/img/sneakers-1.png" alt="" />
         <h2 class="assortment__card-name h4">
           YEEZY BOOST 350 V2 TRIPLE WHITE
         </h2>
@@ -958,7 +1001,8 @@
     </div>
   </div>
 </section>
- <section class="feedback">
+
+      <section class="feedback">
   <div class="container">
     <div class="feedback__body">
       <div class="feedback__left">
@@ -970,7 +1014,7 @@
           </div>
         </div>
         <div class="feedback__center">
-          <img src="./../../img/men.png" alt="" />
+          <img src="./img/men.png" alt="" />
         </div>
       </div>
       <form class="feedback__form">
@@ -1080,9 +1124,9 @@
         </div>
       </div>
       <div class="footer__right">
-        <h2>8 (800) 600-54-80</h2>
+        <a class="h2">8 (800) 600-54-80</a>
         <a href="#" class="mobile__feedback-link"
-          ><img src="./../../img/icon/telegramm.svg" alt=""
+          ><img src="./img/icon/telegramm.svg" alt=""
         /></a>
       </div>
     </div>

@@ -3,6 +3,7 @@
 .feedback {
   background-color: var(--grey-defualt);
   padding: rem(15) 0 rem(20);
+  margin-top: fluid(75, 30);
 
   @include tablet {
     padding: rem(30) 0 rem(15);
@@ -14,7 +15,7 @@
     justify-content: space-between;
     position: relative;
 
-    @include tablet {
+    @include mobile {
       flex-direction: column;
       align-items: start;
     }
@@ -28,18 +29,42 @@
   &__info {
     max-width: rem(326);
     width: 100%;
+    display: grid;
+    row-gap: rem(10);
+
+    @include mobile-s {
+      width: 197px;
+    }
   }
 
   &__center img {
-    // position: absolute;
-    top: -61%;
+    position: absolute;
+    top: -42%;
     right: 42%;
     width: fluid(338, 142);
     height: fluid(225, 135);
     object-fit: cover;
+
+    @include tablet {
+      top: -43%;
+      right: 45%;
+    }
+
+    @include mobile {
+      top: 0%;
+      right: 10%;
+    }
+
+    @include mobile-s {
+      width: fluid(338, 142);
+      height: fluid(225, 135);
+      top: -5%;
+      right: -5%;
+    }
   }
 
   &__form {
+    display: none;
     display: flex;
     column-gap: rem(30);
 
@@ -51,7 +76,7 @@
         color: var(--black);
       }
 
-      @include mobile {
+      @include tablet {
         padding: rem(15);
         border: 1px solid var(--black);
         opacity: 0.4;
@@ -62,7 +87,17 @@
     @include tablet {
       flex-direction: column;
       row-gap: rem(15);
+    }
+
+    @include mobile {
       padding: rem(25) 0 0;
+    }
+
+    @include mobile-s {
+      flex-direction: column;
+      row-gap: rem(15);
+      padding: rem(25) 0 0;
+      // width: 100%;
     }
   }
 }

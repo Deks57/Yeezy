@@ -1,0 +1,78 @@
+@use "../helpers" as *;
+
+.favorites {
+  right: 30px;
+  border-radius: 70px;
+  background: var(--white);
+  width: fluid(70, 46);
+  height: fluid(70, 46);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 10;
+
+  & img {
+    position: relative;
+  }
+
+  & span {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.05em;
+    text-align: center;
+    border-radius: 100px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--gray-bg);
+  }
+
+  &__list {
+    max-width: rem(525);
+    width: 100%;
+    background-color: var(--white);
+    padding: rem(24);
+    position: fixed;
+    z-index: 21;
+    right: 0;
+    top: 0;
+    display: none;
+
+    &-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: rem(30);
+      justify-content: space-between;
+    }
+
+    &.active {
+      overflow-y: auto;
+      display: block;
+    }
+  }
+
+  &__card {
+    margin-top: rem(10);
+    display: flex;
+    align-items: start;
+    column-gap: rem(15);
+    font-weight: 400;
+    font-size: fluid-text(30, 18);
+    color: var(--black);
+
+    &-prise {
+      font-weight: 700;
+    }
+  }
+
+  &__card img {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    object-fit: cover;
+    width: fluid(124, 68);
+    height: fluid(90, 49);
+  }
+}

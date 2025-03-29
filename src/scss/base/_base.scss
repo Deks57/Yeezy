@@ -10,6 +10,13 @@ body {
   font-family: var(--font-main);
 }
 
+a:hover {
+  &:not(.button) {
+    color: #706e6e;
+    transition-duration: 0.3s;
+  }
+}
+
 h1,
 .h1,
 h2,

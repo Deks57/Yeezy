@@ -62,10 +62,11 @@
   align-items: center;
   width: fluid(255, 200);
   height: fluid(255, 200);
+  overflow: hidden;
 }
 
 .card img {
-  width: fluid(205, 164);
+  width: fluid(209, 164);
 }
 
 .next-white {

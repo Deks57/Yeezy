@@ -3,6 +3,7 @@ import "swiper/css/bundle";
 
 import Header from "./modules/mobile-nav.js";
 import ExpandableContent from "./modules/expandeble.js";
+import Favorites from "./modules/favorites.js";
 
 let swiper = new Swiper("#swiper1", {
   loop: true,
@@ -46,13 +47,13 @@ const swiper2 = new Swiper("#swiper2", {
   breakpoints: {
     320: {
       // initialSlide: 2,
-      slidesPerView: 2,
-      spaceBetween: -50,
+      slidesPerView: 1.5,
+      // spaceBetween: -50,
     },
 
     520: {
       slidesPerView: 3,
-      spaceBetween: -50,
+      // spaceBetween: -50,
     },
 
     768: {
@@ -102,6 +103,47 @@ let swiper3 = new Swiper("#swiper3", {
   },
 });
 
+let swiperSmall = new Swiper(".swiper-small", {
+  direction: "vertical",
+  spaceBetween: 30,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+
+let swiper4 = new Swiper("#swiper4", {
+  direction: "vertical",
+  loop: true,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".vertical-arrow-next",
+    prevEl: ".vertical-arrow-prev",
+  },
+  thumbs: {
+    swiper: swiperSmall,
+  },
+});
+
+let swiper5 = new Swiper("#swiper5", {
+  // loop: true,
+  slidesPerView: 4,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".white-arrow-next",
+    prevEl: ".white-arrow-prev",
+  },
+});
+
+let swiper6 = new Swiper("#swiper6", {
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".products__selection-next",
+    prevEl: ".products__selection-prev",
+  },
+});
+
 const selects = document.querySelectorAll(".footer__nav");
 
 for (const select of selects) {
@@ -132,5 +174,91 @@ for (const filter of filters) {
   });
 }
 
+let maxElements = 5;
+let selectedElements = [1];
+
+const tabletItems = document.querySelectorAll(".products__table-item");
+
+tabletItems.forEach((tabletItem) => {
+  tabletItem.addEventListener("click", () => {
+    if (!selectedElements.includes(tabletItem)) {
+      if (selectedElements.length < maxElements) {
+        tabletItem.classList.add("active");
+        selectedElements.push(tabletItem);
+      }
+    } else {
+      tabletItem.classList.remove("active");
+      selectedElements.splice(selectedElements.indexOf(tabletItem), 1);
+    }
+  });
+});
+
+const productsSelects = document.querySelectorAll(".products__select-item");
+
+for (const productsSelect of productsSelects) {
+  const trigger = productsSelect.querySelector(".select-trigger");
+
+  trigger.addEventListener("click", () => {
+    productsSelect.classList.toggle("active");
+  });
+}
+
+const favoritesList = document.querySelector(".favorites__list");
+
+window.addEventListener("click", function (event) {
+  if (event.target.hasAttribute("data-js-favorites")) {
+    const card = event.target.closest(".assortment__card");
+
+    const cardInfo = {
+      imgSrc: card.querySelector(".assortment__card-img").getAttribute("src"),
+      title: card.querySelector(".assortment__card-name").innerText,
+      prise: card.querySelector(".h3").innerText,
+      // heart: card.querySelector(".favorites__heart").innerText,
+    };
+
+    const cardItemHTML = `
+    <div class="favorites__card">
+    <img
+      src="${cardInfo.imgSrc}" alt=""
+    />
+    <div class="favorites__card-info">
+      <div class="favorites__card-name">
+        ${cardInfo.title}
+      </div>
+      <div class="favorites__card-prise">${cardInfo.prise}</div>
+    </div>
+  </div>`;
+
+    favoritesList.insertAdjacentHTML("beforeend", cardItemHTML);
+  }
+});
+
+// const favoritesList = document.querySelector(".favorites__list");
+
+// window.addEventListener("click", function (event) {
+//   if (event.target.hasAttribute("data-js-favorites")) {
+//     const card = event.target.closest(".assortment__card");
+
+//     const cardInfo = {
+//       imgSrc: card.querySelector(".assortment__card-img").getAttribute("src"),
+//       title: card.querySelector(".assortment__card-name").innerText,
+//       price: card.querySelector(".h3").innerText,
+//     };
+//     {
+//       const cardItemHTML = (
+//         <div class="favorites__card">
+//           <img src="${cardInfo.imgSrc}" alt="${cardInfo.title}" />
+//           <div class="favorites__card-info">
+//             <div class="favorites__card-name">${cardInfo.title}</div>
+//             <div class="favorites__card-price">${cardInfo.price}</div>
+//           </div>
+//         </div>
+//       );
+//       favoritesList.insertAdjacentHTML("beforeend", cardItemHTML);
+//     }
+//   }
+// });
+
 new Header();
 new ExpandableContent();
+new Favorites();
